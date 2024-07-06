@@ -20,8 +20,8 @@
 6. Replace the empty strings with respective webhooks.
 7. Restart IW4MAdmin.
 
-## Requirement
-- You may need IW4MAdmin version `2024.6.29.807` or later.
+## Requirements
+- IW4MAdmin version `2024.6.29.807` or later.
 
-### Special thanks and acknowledgements
+### Acknowledgements
 - [Zwambro](https://github.com/Zwambro) for the original plugin.

@@ -43,7 +43,7 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
                         Inline = true
                     }
                 ];
-                await BuildClientPenaltyEmbedAsync(Resources.GetMap(server), $"{issuer} kicked {target}", 15466496,
+                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} kicked {target}", 15466496,
                     kickFields, token);
                 break;
             case EFPenalty.PenaltyType.TempBan:
@@ -69,7 +69,7 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
                     }
                 ];
 
-                await BuildClientPenaltyEmbedAsync(Resources.GetMap(server), $"{issuer} temp banned {target}", 15466496,
+                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} temp banned {target}", 15466496,
                     tempBanFields, token);
                 break;
             case EFPenalty.PenaltyType.Ban:
@@ -95,7 +95,7 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
                     }
                 ];
 
-                await BuildClientPenaltyEmbedAsync(Resources.GetMap(server), $"{issuer} banned {target}", 15466496,
+                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} banned {target}", 15466496,
                     banFields, token);
                 break;
             case EFPenalty.PenaltyType.Unban:
@@ -109,13 +109,13 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
                     }
                 ];
 
-                await BuildClientPenaltyEmbedAsync(Resources.GetMap(server), $"{issuer} unbanned {target}", 15132390,
+                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} unbanned {target}", 15132390,
                     unbanFields, token);
                 break;
         }
     }
 
-    private async Task BuildClientPenaltyEmbedAsync(Resources.Map map, string description, int colour, List<Field> fields,
+    private async Task BuildClientPenaltyEmbedAsync(Resources.Parser map, string description, int colour, List<Field> fields,
         CancellationToken token = default)
     {
         var message = new ClientPenaltyHook
@@ -126,7 +126,7 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
             Author = new Author
             {
                 Name = map.Name,
-                IconUri = map.ImageUri,
+                IconUri = map.IconUri,
             },
             Fields = fields
         };
