@@ -115,7 +115,7 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
         }
     }
 
-    private async Task BuildClientPenaltyEmbedAsync(Resources.Parser map, string description, int colour, List<Field> fields,
+    private async Task BuildClientPenaltyEmbedAsync(Resources.Parser parser, string description, int colour, List<Field> fields,
         CancellationToken token = default)
     {
         var message = new ClientPenaltyHook
@@ -125,8 +125,8 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
             Colour = colour,
             Author = new Author
             {
-                Name = map.Name,
-                IconUri = map.IconUri,
+                Name = parser.Name,
+                IconUri = parser.IconUri,
             },
             Fields = fields
         };
