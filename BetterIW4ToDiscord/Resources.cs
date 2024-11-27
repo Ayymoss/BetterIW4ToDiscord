@@ -33,12 +33,13 @@ public abstract class Resources
         ["Plutonium T4 CO-OP/Zombies Parser"] = new Parser("PlutoT4 Singleplayer","https://i.gyazo.com/1e1987d84038aae38610cab9c999868d.png", 7829308),
         ["RektT5m Parser"] = new Parser("RektT5M","https://i.gyazo.com/a8a22764fafd4cc178329717b9bb35dd.png", 6064778),
         ["Plutonium T5 Parser"] = new Parser("PlutoT5","https://i.gyazo.com/a8a22764fafd4cc178329717b9bb35dd.png", 6064778),
-        ["Plutonium T6 Parser"] = new Parser("PlutoT6","https://i.gyazo.com/5a445c5c733c698b32732550ec797e91.png", 15108608),
+        ["Plutonium T6 Parser (2024)"] = new Parser("PlutoT6","https://i.gyazo.com/5a445c5c733c698b32732550ec797e91.png", 15108608),
         ["Black Ops 3 Parser"] = new Parser("Call of Duty: Black Ops III","https://i.gyazo.com/5691ca84d47e219cdec76901ff142159.png", 16737792),
         ["BOIII Parser"] = new Parser("BOIII","https://i.imgur.com/nIi5QFP.jpg", 16737792),
         ["S1x Parser"] = new Parser("SHG1","https://i.gyazo.com/d524bf93e1fc38fa46f8fe1ed5162493.png", 13421568),
         ["CS:GO Parser"] = new Parser("CSGO","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
-        ["CS:GO (SourceMod) Parser"] = new Parser("CSGO (SourceMod)","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881)
+        ["CS:GO (SourceMod) Parser"] = new Parser("CSGO (SourceMod)","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
+        ["H2M-Mod Parser"] = new Parser("H2MMOD","https://i.imgur.com/IkPHQi7.png", 6723844)
         // @formatter:on
     };
 
@@ -418,7 +419,71 @@ public abstract class Resources
             new Map("dz_blacksite", "https://static.wikia.nocookie.net/cswikia/images/c/c1/Dz_blacksite.png/revision/latest/scale-to-width-down/1000?cb=20201203223002"),
             new Map("dz_frostbite", "https://static.wikia.nocookie.net/cswikia/images/c/c6/Dz_frostbite.png/revision/latest/scale-to-width-down/1000?cb=20211025085227"),
             new Map("dz_sirocco", "https://static.wikia.nocookie.net/cswikia/images/7/7f/Sirocco-center.png/revision/latest/scale-to-width-down/1000?cb=20211020085720"),
+        ],
+        ["H2M"] =
+        [ 
+            new Map("mp_convoy", "https://static.wikia.nocookie.net/callofduty/images/3/3c/Bare_Load_Screen_Ambush_CoD4.jpg/revision/latest?cb=20100723075603"),
+            new Map("mp_backlot", "https://static.wikia.nocookie.net/callofduty/images/0/0f/Backlot_loadscreen_CoD4.jpg/revision/latest?cb=20100723075613"),
+            new Map("mp_bloc", "https://static.wikia.nocookie.net/callofduty/images/9/9d/Bare_Load_Screen_Bloc_CoD4.jpg/revision/latest?cb=20100723075638"),
+            new Map("mp_bog", "https://static.wikia.nocookie.net/callofduty/images/2/29/Bog_Map_Image_CoD4.jpg/revision/latest?cb=20100723075648"),
+            new Map("mp_countdown", "https://static.wikia.nocookie.net/callofduty/images/e/e9/Bare_Load_Screen_Countdown_CoD4.jpg/revision/latest?cb=20100723075829"),
+            new Map("mp_crash", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640400-Bare-Load-Screen-Crash-CoD4.jpg"),
+            new Map("mp_crossfire", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640360-Cod4-map-crossfire.jpg"),
+            new Map("mp_citystreets", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640360-Cod4-map-district.jpg"),
+            new Map("mp_farm", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640400-Bare-Load-Screen-Downpour-CoD4.jpg"),
+            new Map("mp_overgrown", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640400-Bare-Load-Screen-Overgrown-CoD4.jpg"),
+            new Map("mp_pipeline", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640360-Cod4-map-pipeline.jpg"),
+            new Map("mp_shipment", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640360-Shipment-Load.jpg"),
+            new Map("mp_showdown", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640360-Showdown-MWR.jpg"),
+            new Map("mp_strike", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640400-Cod4-map-strike.jpg"),
+            new Map("mp_vacant", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640360-Cod4-map-vacant.jpg"),
+            new Map("mp_cargoship", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640400-Cod4-map-wetwork.jpg"),
+            new Map("mp_crash_snow", "https://static.wikia.nocookie.net/callofduty/images/f/f7/Bare_Load_Screen_Winter_Crash_CoD4.jpg/revision/latest?cb=20100723080720"),
+            new Map("mp_broadcast", "https://static.wikia.nocookie.net/callofduty/images/e/ec/Broadcast_loading_screen_CoD4.jpg/revision/latest?cb=20100723080927"),
+            new Map("mp_creek", "https://static.wikia.nocookie.net/callofduty/images/e/e1/CreekCOD4.jpg/revision/latest?cb=20100723075941"),
+            new Map("mp_carentan", "https://static.wikia.nocookie.net/callofduty/images/0/0c/ChinatownCOD4.jpg/revision/latest?cb=20110727174233"),
+            new Map("mp_killhouse", "https://static.wikia.nocookie.net/callofduty/images/4/48/Cod4-killhouse.jpg/revision/latest?cb=20100723081127"),
+            new Map("mp_farm_spring", "https://www.gamegrin.com/assets/Uploads/_resampled/resizedimage640400-Bare-Load-Screen-Downpour-CoD4.jpg"),
+            new Map("mp_bog_summer", "https://static.wikia.nocookie.net/callofduty/images/2/29/Bog_Map_Image_CoD4.jpg/revision/latest?cb=20100723075648"),
+            new Map("airport", "https://static.wikia.nocookie.net/callofduty/images/1/14/Bare_Load_Screen_Terminal_MW2.jpg/revision/latest?cb=20100720174519"),
+            new Map("boneyard", "https://static.wikia.nocookie.net/callofduty/images/e/ef/Scrapyard.jpg/revision/latest?cb=20100720174413"),
+            new Map("mp_boneyard", "https://static.wikia.nocookie.net/callofduty/images/e/ef/Scrapyard.jpg/revision/latest?cb=20100720174413"),
+            new Map("oilrig", "https://static.wikia.nocookie.net/callofduty/images/3/30/Mg_oilrig.jpg/revision/latest480?cb=20120716172859"),
+            new Map("estate", "https://static.wikia.nocookie.net/callofduty/images/9/91/Estate.jpg/revision/latest?cb=20100720174409"),
+            new Map("mp_afghan", "https://static.wikia.nocookie.net/callofduty/images/8/83/Afghan_loading_screen_MW2.png/revision/latest?cb=20130310131229"),
+            new Map("mp_complex", "https://static.wikia.nocookie.net/callofduty/images/0/0e/MW2_Bailout.jpg/revision/latest?cb=20100613115812"),
+            new Map("mp_derail", "https://static.wikia.nocookie.net/callofduty/images/2/20/Derail.jpg/revision/latest?cb=20100720174408"),
+            new Map("mp_estate", "https://static.wikia.nocookie.net/callofduty/images/9/91/Estate.jpg/revision/latest?cb=20100720174409"),       
+            new Map("mp_favela", "https://static.wikia.nocookie.net/callofduty/images/2/29/Favela_Map_MW2.jpg/revision/latest?cb=20100720174410"),                   
+            new Map("mp_fuel2", "https://static.wikia.nocookie.net/callofduty/images/d/de/Fuel_loadscreen.jpg/revision/latest?cb=20100712195521"),
+            new Map("mp_highrise", "https://static.wikia.nocookie.net/callofduty/images/4/49/Highrise-promo.jpg/revision/latest?cb=20100720174411"),
+            new Map("mp_invasion", "https://static.wikia.nocookie.net/callofduty/images/9/95/Invasion_MW2.jpg/revision/latest?cb=20100720174410"),
+            new Map("mp_checkpoint", "https://static.wikia.nocookie.net/callofduty/images/9/9f/Karachi-prev.jpg/revision/latest?cb=20100720174412"),
+            new Map("mp_quarry", "https://static.wikia.nocookie.net/callofduty/images/8/8a/Loadscreen_mp_quarry.jpg/revision/latest?cb=20091207173135"),
+            new Map("mp_rundown", "https://static.wikia.nocookie.net/callofduty/images/3/3a/Rundown-prev.jpg/revision/latest?cb=20100720174412"),
+            new Map("mp_rust", "https://static.wikia.nocookie.net/callofduty/images/3/33/Rust.jpg/revision/latest?cb=20100720174413"),        
+            new Map("mp_compact", "https://static.wikia.nocookie.net/callofduty/images/d/d7/MW2_Salvage.jpg/revision/latest?cb=20100613115824"),        
+            new Map("mp_nightshift", "https://static.wikia.nocookie.net/callofduty/images/d/d2/Skidrow.jpg/revision/latest?cb=20100720174516"), 
+            new Map("mp_storm", "https://static.wikia.nocookie.net/callofduty/images/6/60/MW2_Storm.jpg/revision/latest?cb=20100613115722"),
+            new Map("mp_subbase", "https://static.wikia.nocookie.net/callofduty/images/1/1e/Sub_Base.jpg/revision/latest?cb=20100720174517"),
+            new Map("mp_terminal", "https://static.wikia.nocookie.net/callofduty/images/1/14/Bare_Load_Screen_Terminal_MW2.jpg/revision/latest?cb=20100720174519"),
+            new Map("mp_trailerpark", "https://static.wikia.nocookie.net/callofduty/images/c/cf/Trailer_Park.jpg/revision/latest?cb=20100712195448"),
+            new Map("mp_underpass", "https://static.wikia.nocookie.net/callofduty/images/b/b5/Underpass.jpg/revision/latest?cb=20100720174519"),                   
+            new Map("mp_brecourt", "https://static.wikia.nocookie.net/callofduty/images/c/cc/Wasteland.jpg/revision/latest?cb=20100720174520"),  
+            new Map("mp_crash", "https://static.wikia.nocookie.net/callofduty/images/9/9f/Bare_Load_Screen_Crash_MW2.jpg/revision/latest?cb=20100613115705"),
+            new Map("gulag", "https://static.wikia.nocookie.net/callofduty/images/5/53/Mw2_gulag_previewscreen.png/revision/latest?cb=20210625173610"),    
+            new Map("dc_whitehouse", "https://static.wikia.nocookie.net/callofduty/images/6/60/Whiskey_Hotel_menu_image_MW2.png/revision/latest?cb=20161104114740"), 
+            new Map("mp_abandon", "https://static.wikia.nocookie.net/callofduty/images/c/c3/Carnival_loadscreen.jpg/revision/latest/scale-to-width-down/1000?cb=20100712195429"), 
+            new Map("cliffhanger", "https://static.wikia.nocookie.net/callofduty/images/f/fa/Russian_Troops_Cliffhanger_MW2.jpg/revision/latest/scale-to-width-down/1000?cb=20140209031033"), 
+            new Map("contingency", "https://static.wikia.nocookie.net/callofduty/images/a/a8/Desperate_Times_achievement_image_MW2R.png/revision/latest/scale-to-width-down/1000?cb=20200421152033"), 
+            new Map("dcburning",   "https://static.wikia.nocookie.net/callofduty/images/d/db/Washington_D.C._on_fire_Second_Sun_MW2.png/revision/latest/scale-to-width-down/1000?cb=20130116003709"), 
+        
         ]
-        // @formatter:on
+            
+           
+            
+          
+            
+            // @formatter:on
     };
 }
