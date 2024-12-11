@@ -18,15 +18,17 @@ public class Plugin : IPluginV2
     private readonly WebHookDispatcher _webHookDispatcher;
     private readonly WebHookManager _webhookManager;
     private readonly ConfigurationRoot _config;
+    private readonly Resources _resources;
     public string Name => "Better IW4 To Discord";
     public string Author => "Amos";
     public string Version => "2024-07-05";
 
-    public Plugin(WebHookDispatcher webHookDispatcher, WebHookManager webhookManager, ConfigurationRoot config)
+    public Plugin(WebHookDispatcher webHookDispatcher, WebHookManager webhookManager, ConfigurationRoot config, Resources resources)
     {
         _webHookDispatcher = webHookDispatcher;
         _webhookManager = webhookManager;
         _config = config;
+        _resources = resources;
 
         foreach (var property in config.WebHooks.GetType().GetProperties())
         {
@@ -55,6 +57,7 @@ public class Plugin : IPluginV2
     {
         serviceCollection.AddSingleton<WebHookDispatcher>();
         serviceCollection.AddSingleton<WebHookManager>();
+        serviceCollection.AddSingleton<Resources>();
         serviceCollection.AddConfiguration("BetterIW4ToDiscord", new ConfigurationRoot());
     }
 
@@ -66,7 +69,7 @@ public class Plugin : IPluginV2
 
     private async Task OnClientMessaged(ClientMessageEvent messageEvent, CancellationToken token)
     {
-        var map = Resources.GetParser(messageEvent.Server.RconParser.Name);
+        var map = _resources.GetParser(messageEvent.Server.RconParser.Name);
 
         var message = new ClientMessageHook
         {

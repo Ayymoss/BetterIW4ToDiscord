@@ -1,0 +1,6 @@
+﻿<Solution>
+  <Folder Name="/SolutionItem/">
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="BetterIW4ToDiscord\BetterIW4ToDiscord.csproj" Type="Classic C#" />
+</Solution>

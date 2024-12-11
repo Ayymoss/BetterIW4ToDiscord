@@ -11,12 +11,12 @@ using SharedLibraryCore.Interfaces;
 
 namespace BetterIW4ToDiscord;
 
-public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatcher, ApplicationConfiguration appConfig)
+public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatcher, ApplicationConfiguration appConfig, Resources resources)
 {
     public async Task OnClientPenaltyAsync(EFClient client, EFPenalty penalty, CancellationToken token = default)
     {
         var server = client.CurrentServer;
-        var parser = Resources.GetParser(server.RconParser.Name);
+        var parser = resources.GetParser(server.RconParser.Name);
         var offence = penalty.Offense.StripColors();
         var duration = penalty.Expires is null ? "Permanent" : penalty.Expires.Humanize();
         var target = client.ClientToUrl(appConfig.WebfrontUrl);
@@ -30,38 +30,37 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
             case EFPenalty.PenaltyType.Kick:
                 List<Field> kickFields =
                 [
-                    new Field
+                    new()
                     {
                         Name = "Reason",
                         Value = offence,
                         Inline = false
                     },
-                    new Field
+                    new()
                     {
                         Name = "Server",
                         Value = server.ServerName.StripColors(),
                         Inline = true
                     }
                 ];
-                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} kicked {target}", 15466496,
-                    kickFields, token);
+                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} kicked {target}", 15466496, kickFields, token);
                 break;
             case EFPenalty.PenaltyType.TempBan:
                 List<Field> tempBanFields =
                 [
-                    new Field
+                    new()
                     {
                         Name = "Reason",
                         Value = offence,
                         Inline = false
                     },
-                    new Field
+                    new()
                     {
                         Name = "Server",
                         Value = server.ServerName.StripColors(),
                         Inline = true
                     },
-                    new Field
+                    new()
                     {
                         Name = "Duration",
                         Value = duration,
@@ -69,25 +68,24 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
                     }
                 ];
 
-                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} temp banned {target}", 15466496,
-                    tempBanFields, token);
+                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} temp banned {target}", 15466496, tempBanFields, token);
                 break;
             case EFPenalty.PenaltyType.Ban:
                 List<Field> banFields =
                 [
-                    new Field
+                    new()
                     {
                         Name = "Reason",
                         Value = offence,
                         Inline = false
                     },
-                    new Field
+                    new()
                     {
                         Name = "Server",
                         Value = server.ServerName.StripColors(),
                         Inline = true
                     },
-                    new Field
+                    new()
                     {
                         Name = "Duration",
                         Value = "Permanent",
@@ -95,13 +93,12 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
                     }
                 ];
 
-                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} banned {target}", 15466496,
-                    banFields, token);
+                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} banned {target}", 15466496, banFields, token);
                 break;
             case EFPenalty.PenaltyType.Unban:
                 List<Field> unbanFields =
                 [
-                    new Field
+                    new()
                     {
                         Name = "Reason",
                         Value = offence,
@@ -109,8 +106,7 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
                     }
                 ];
 
-                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} unbanned {target}", 15132390,
-                    unbanFields, token);
+                await BuildClientPenaltyEmbedAsync(parser, $"{issuer} unbanned {target}", 15132390, unbanFields, token);
                 break;
         }
     }
@@ -159,7 +155,7 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
             },
             Thumbnail = new Thumbnail
             {
-                Uri = Resources.GetMap(server).ImageUri
+                Uri = resources.GetMap(server).ImageUri
             },
             Fields =
             [
@@ -183,7 +179,7 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
 
     public async Task BuildServerStatusEmbedAsync(IGameServer server, string description, int colour, CancellationToken token = default)
     {
-        var parser = Resources.GetParser(server.RconParser.Name);
+        var parser = resources.GetParser(server.RconParser.Name);
 
         var message = new ServerStatusHook
         {
@@ -204,7 +200,7 @@ public class WebHookManager(ConfigurationRoot config, WebHookDispatcher dispatch
     public async Task BuildClientConnectionEmbedAsync(EFClient client, string description, int colour, CancellationToken token = default)
     {
         var server = client.CurrentServer;
-        var parser = Resources.GetParser(server.RconParser.Name);
+        var parser = resources.GetParser(server.RconParser.Name);
 
         var message = new ClientConnectionHook
         {
