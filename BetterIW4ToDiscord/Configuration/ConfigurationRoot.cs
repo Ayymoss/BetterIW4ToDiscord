@@ -23,7 +23,7 @@ public class ConfigurationRoot
         ["S1x Parser"] = new Resources.Parser("SHG1","https://i.gyazo.com/d524bf93e1fc38fa46f8fe1ed5162493.png", 13421568),
         ["CS:GO Parser"] = new Resources.Parser("CSGO","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
         ["CS:GO (SourceMod) Parser"] = new Resources.Parser("CSGO (SourceMod)","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
-        ["H2M-Mod Parser"] = new Resources.Parser("H2MMOD","https://i.imgur.com/IkPHQi7.png", 6723844)
+        ["H2M-Mod Parser"] = new Resources.Parser("H2MMOD","https://i.imgur.com/IkPHQi7.png", 6723844),
         ["IW7-Mod Parser"] = new Resources.Parser("IW7MOD","https://imgur.com/a/GEY4A0q", 6723844)
         // @formatter:on
     };
@@ -462,7 +462,7 @@ public class ConfigurationRoot
             new Resources.Map("cliffhanger", "https://static.wikia.nocookie.net/callofduty/images/f/fa/Russian_Troops_Cliffhanger_MW2.jpg/revision/latest/scale-to-width-down/1000?cb=20140209031033"), 
             new Resources.Map("contingency", "https://static.wikia.nocookie.net/callofduty/images/a/a8/Desperate_Times_achievement_image_MW2R.png/revision/latest/scale-to-width-down/1000?cb=20200421152033"), 
             new Resources.Map("dcburning",   "https://static.wikia.nocookie.net/callofduty/images/d/db/Washington_D.C._on_fire_Second_Sun_MW2.png/revision/latest/scale-to-width-down/1000?cb=20130116003709"), 
-        ]
+        ],
         ["IW7"] =
         [
             new Resources.Map("mp_frontier", "https://static.wikia.nocookie.net/callofduty/images/f/f8/Frontier_Overview_IW.png/revision/latest/scale-to-width-down/268?cb=20161129030910"),
