@@ -23,7 +23,8 @@ public class ConfigurationRoot
         ["S1x Parser"] = new Resources.Parser("SHG1","https://i.gyazo.com/d524bf93e1fc38fa46f8fe1ed5162493.png", 13421568),
         ["CS:GO Parser"] = new Resources.Parser("CSGO","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
         ["CS:GO (SourceMod) Parser"] = new Resources.Parser("CSGO (SourceMod)","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
-        ["H2M-Mod Parser"] = new Resources.Parser("H2MMOD","https://i.imgur.com/IkPHQi7.png", 6723844)
+        ["H2M-Mod Parser"] = new Resources.Parser("H2MMOD","https://i.imgur.com/IkPHQi7.png", 6723844),
+        ["IW7-Mod Parser"] = new Resources.Parser("IW7MOD","https://imgur.com/a/GEY4A0q", 6723844)
         // @formatter:on
     };
 
@@ -461,6 +462,47 @@ public class ConfigurationRoot
             new Resources.Map("cliffhanger", "https://static.wikia.nocookie.net/callofduty/images/f/fa/Russian_Troops_Cliffhanger_MW2.jpg/revision/latest/scale-to-width-down/1000?cb=20140209031033"), 
             new Resources.Map("contingency", "https://static.wikia.nocookie.net/callofduty/images/a/a8/Desperate_Times_achievement_image_MW2R.png/revision/latest/scale-to-width-down/1000?cb=20200421152033"), 
             new Resources.Map("dcburning",   "https://static.wikia.nocookie.net/callofduty/images/d/db/Washington_D.C._on_fire_Second_Sun_MW2.png/revision/latest/scale-to-width-down/1000?cb=20130116003709"), 
+        ],
+        ["IW7"] =
+        [
+            new Resources.Map("mp_frontier", "https://static.wikia.nocookie.net/callofduty/images/f/f8/Frontier_Overview_IW.png/revision/latest/scale-to-width-down/268?cb=20161129030910"),
+            new Resources.Map("mp_afghan", "https://static.wikia.nocookie.net/callofduty/images/6/64/Dominion_IW.png/revision/latest/scale-to-width-down/1000?cb=20170331224057"),
+            new Resources.Map("mp_depot", "https://static.wikia.nocookie.net/callofduty/images/8/86/Depot_22_Title_IW.png/revision/latest/scale-to-width-down/1000?cb=20170907223336"),
+            new Resources.Map("mp_flip", "https://static.wikia.nocookie.net/callofduty/images/c/cf/Excess_IW.jpg/revision/latest?cb=20170404200800"),
+            new Resources.Map("mp_geneva", "https://static.wikia.nocookie.net/callofduty/images/2/28/Renaissance_IW.png/revision/latest/scale-to-width-down/1000?cb=20170131160447"),
+            new Resources.Map("mp_renaissance2", "https://static.wikia.nocookie.net/callofduty/images/2/28/Renaissance_IW.png/revision/latest/scale-to-width-down/1000?cb=20170131160447"),
+            new Resources.Map("mp_hawkwar", "https://static.wikia.nocookie.net/callofduty/images/4/4e/Heartland_Title_IW.png/revision/latest?cb=20170907223351"),
+            new Resources.Map("mp_junk", "https://static.wikia.nocookie.net/callofduty/images/b/b4/Scrap_IW.jpg/revision/latest?cb=20170404200813"),
+            new Resources.Map("mp_mansion", "https://static.wikia.nocookie.net/callofduty/images/3/3b/Archive_IW.jpg/revision/latest/scale-to-width-down/1000?cb=20170404200740"),
+            new Resources.Map("mp_marsoasis", "https://static.wikia.nocookie.net/callofduty/images/8/81/Turista_IW.jpg/revision/latest?cb=20170404200827"),
+            new Resources.Map("mp_turista2", "https://static.wikia.nocookie.net/callofduty/images/8/81/Turista_IW.jpg/revision/latest?cb=20170404200827"),
+            new Resources.Map("mp_neon", "https://static.wikia.nocookie.net/callofduty/images/3/39/Neon_IW.png/revision/latest?cb=20170131160929"),
+            new Resources.Map("mp_nova", "https://static.wikia.nocookie.net/callofduty/images/4/4b/Bermuda_IW.png/revision/latest?cb=20170628041555"),
+            new Resources.Map("mp_overflow", "https://static.wikia.nocookie.net/callofduty/images/9/96/Permafrost_IW.png/revision/latest?cb=20170628041715"),
+            new Resources.Map("mp_permafrost2", "https://static.wikia.nocookie.net/callofduty/images/9/96/Permafrost_IW.png/revision/latest?cb=20170628041715"),
+            new Resources.Map("mp_paris", "https://static.wikia.nocookie.net/callofduty/images/7/7d/Ember_IW.png/revision/latest?cb=20170628041620"),
+            new Resources.Map("mp_pixel", "https://static.wikia.nocookie.net/callofduty/images/3/3e/Fore_IW.png/revision/latest?cb=20170628041648"),
+            new Resources.Map("mp_prime", "https://static.wikia.nocookie.net/callofduty/images/0/09/Noir_IW.png/revision/latest?cb=20161220221154"),
+            new Resources.Map("mp_rally", "https://static.wikia.nocookie.net/callofduty/images/2/27/Carnage_Title_IW.png/revision/latest?cb=20170907223316"),
+            new Resources.Map("mp_carnage2", "https://static.wikia.nocookie.net/callofduty/images/2/27/Carnage_Title_IW.png/revision/latest?cb=20170907223316"),
+            new Resources.Map("mp_parkour", "https://static.wikia.nocookie.net/callofduty/images/b/b9/Breakout_IW.jpg/revision/latest?cb=20161001191127"),
+            new Resources.Map("mp_proto", "https://static.wikia.nocookie.net/callofduty/images/5/5a/Frost_Overview_1_IW.png/revision/latest?cb=20161129030930"),
+            new Resources.Map("mp_quarry", "https://static.wikia.nocookie.net/callofduty/images/2/2c/Crusher_Overview_IW.png/revision/latest?cb=20161129030850"),
+            new Resources.Map("mp_riot", "https://static.wikia.nocookie.net/callofduty/images/5/51/Retaliation_Overview_IW.png/revision/latest?cb=20161129031205"),
+            new Resources.Map("mp_rivet", "https://static.wikia.nocookie.net/callofduty/images/1/10/Skydock_Overview_IW.png/revision/latest?cb=20161129031233"),
+            new Resources.Map("mp_skyway", "https://static.wikia.nocookie.net/callofduty/images/2/26/Terminal_Concept_Art_without_Text_IW.png/revision/latest?cb=20230217213511"),
+            new Resources.Map("mp_breakneck", "https://static.wikia.nocookie.net/callofduty/images/8/8c/Mayday_Overview_IW.png/revision/latest?cb=20161129031103"),
+            new Resources.Map("mp_codphish", "https://static.wikia.nocookie.net/callofduty/images/b/b1/Altitude_Title_IW.png/revision/latest?cb=20170907223258"),
+            new Resources.Map("mp_desert", "https://static.wikia.nocookie.net/callofduty/images/8/87/Grounded_IW.png/revision/latest?cb=20240124053941"),
+            new Resources.Map("mp_divide", "https://static.wikia.nocookie.net/callofduty/images/d/d4/Scorch_Overview_IW.png/revision/latest?cb=20161129031134"),
+            new Resources.Map("mp_dome_iw", "https://static.wikia.nocookie.net/callofduty/images/9/99/Genesis_IW.png/revision/latest?cb=20161107114209"),
+            new Resources.Map("mp_fallen", "https://static.wikia.nocookie.net/callofduty/images/3/36/Throwback_IW.png/revision/latest?cb=20170118042431"),
+            new Resources.Map("mp_metropolis", "https://static.wikia.nocookie.net/callofduty/images/e/e8/Precient_IW.png/revision/latest?cb=20161108142643"),
+            new Resources.Map("cp_zmb", "https://static.wikia.nocookie.net/callofduty/images/d/d3/Zombies_in_Spaceland_Promo.png/revision/latest?cb=20161013220948"),
+            new Resources.Map("cp_disco", "https://static.wikia.nocookie.net/callofduty/images/9/9a/Shaolin_Shuffle_Artwork_Large.png/revision/latest?cb=20170907222735"),
+            new Resources.Map("cp_final", "https://static.wikia.nocookie.net/callofduty/images/9/99/The_Beast_From_Beyond_Title_Card_IW.png/revision/latest?cb=20170907161409"),
+            new Resources.Map("cp_rave", "https://static.wikia.nocookie.net/callofduty/images/1/1c/RaveInTheRedwoods_IW.jpg/revision/latest?cb=20161220181158"),
+            new Resources.Map("cp_town", "https://static.wikia.nocookie.net/callofduty/images/a/a2/Attack_of_the_Radioactive_Thing_Title_IW.jpg/revision/latest?cb=20180726034616")
         ]
         // @formatter:on
     };
