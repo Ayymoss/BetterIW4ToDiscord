@@ -21,7 +21,7 @@ public class Plugin : IPluginV2
     private readonly Resources _resources;
     public string Name => "Better IW4 To Discord";
     public string Author => "Amos";
-    public string Version => "2025-07-13";
+    public string Version => "2025-11-16";
 
     public Plugin(WebHookDispatcher webHookDispatcher, WebHookManager webhookManager, ConfigurationRoot config, Resources resources)
     {
