@@ -24,7 +24,8 @@ public class ConfigurationRoot
         ["CS:GO Parser"] = new Resources.Parser("CSGO","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
         ["CS:GO (SourceMod) Parser"] = new Resources.Parser("CSGO (SourceMod)","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
         ["H2M-Mod Parser"] = new Resources.Parser("H2MMOD","https://i.imgur.com/IkPHQi7.png", 6723844),
-        ["IW7-Mod Parser"] = new Resources.Parser("IW7MOD","https://imgur.com/a/GEY4A0q", 6723844)
+        ["IW7-Mod Parser"] = new Resources.Parser("IW7MOD","https://imgur.com/a/GEY4A0q", 6723844),
+        ["L4D2 (SourceMod) Parser"] = new Resources.Parser("L4D2","https://icons.iconarchive.com/icons/3xhumed/mega-games-pack-31/256/Left4Dead-2-2-icon.png", 6723844)
         // @formatter:on
     };
 
@@ -503,6 +504,77 @@ public class ConfigurationRoot
             new Resources.Map("cp_final", "https://static.wikia.nocookie.net/callofduty/images/9/99/The_Beast_From_Beyond_Title_Card_IW.png/revision/latest?cb=20170907161409"),
             new Resources.Map("cp_rave", "https://static.wikia.nocookie.net/callofduty/images/1/1c/RaveInTheRedwoods_IW.jpg/revision/latest?cb=20161220181158"),
             new Resources.Map("cp_town", "https://static.wikia.nocookie.net/callofduty/images/a/a2/Attack_of_the_Radioactive_Thing_Title_IW.jpg/revision/latest?cb=20180726034616")
+        ],
+        ["L4D2"] =
+        [
+            new Resources.Map("c1m1_hotel", "https://static.wikia.nocookie.net/left4dead/images/6/6e/DeadCenter.jpg"),
+            new Resources.Map("c1m2_streets", "https://static.wikia.nocookie.net/left4dead/images/6/6e/DeadCenter.jpg"),
+            new Resources.Map("c1m3_mall", "https://static.wikia.nocookie.net/left4dead/images/6/6e/DeadCenter.jpg"),
+            new Resources.Map("c1m4_atrium", "https://static.wikia.nocookie.net/left4dead/images/6/6e/DeadCenter.jpg"),
+            new Resources.Map("c2m1_highway", "https://static.wikia.nocookie.net/left4dead/images/6/6c/Dark_Carnival02.png"),
+            new Resources.Map("c2m2_fairgrounds", "https://static.wikia.nocookie.net/left4dead/images/6/6c/Dark_Carnival02.png"),
+            new Resources.Map("c2m3_coaster", "https://static.wikia.nocookie.net/left4dead/images/6/6c/Dark_Carnival02.png"),
+            new Resources.Map("c2m4_barns", "https://static.wikia.nocookie.net/left4dead/images/6/6c/Dark_Carnival02.png"),
+            new Resources.Map("c2m5_concert", "https://static.wikia.nocookie.net/left4dead/images/6/6c/Dark_Carnival02.png"),
+            new Resources.Map("c3m1_plankcountry", "https://static.wikia.nocookie.net/left4dead/images/6/65/TheNewSwampFever.JPG"),
+            new Resources.Map("c3m2_swamp", "https://static.wikia.nocookie.net/left4dead/images/6/65/TheNewSwampFever.JPG"),
+            new Resources.Map("c3m3_shantytown", "https://static.wikia.nocookie.net/left4dead/images/6/65/TheNewSwampFever.JPG"),
+            new Resources.Map("c3m4_plantation", "https://static.wikia.nocookie.net/left4dead/images/6/65/TheNewSwampFever.JPG"),
+            // Hard Rain
+            new Resources.Map("c4m1_milltown_a", "https://static.wikia.nocookie.net/left4dead/images/c/cd/HardRain.jpg"),
+            new Resources.Map("c4m2_sugarmill_a", "https://static.wikia.nocookie.net/left4dead/images/c/cd/HardRain.jpg"),
+            new Resources.Map("c4m3_sugarmill_b", "https://static.wikia.nocookie.net/left4dead/images/c/cd/HardRain.jpg"),
+            new Resources.Map("c4m4_milltown_b", "https://static.wikia.nocookie.net/left4dead/images/c/cd/HardRain.jpg"),
+            new Resources.Map("c4m5_milltown_escape", "https://static.wikia.nocookie.net/left4dead/images/c/cd/HardRain.jpg"),
+            // The Parish
+            new Resources.Map("c5m1_waterfront", "https://static.wikia.nocookie.net/left4dead/images/e/e8/TheNewParish.jpg"),
+            new Resources.Map("c5m2_park", "https://static.wikia.nocookie.net/left4dead/images/e/e8/TheNewParish.jpg"),
+            new Resources.Map("c5m3_cemetery", "https://static.wikia.nocookie.net/left4dead/images/e/e8/TheNewParish.jpg"),
+            new Resources.Map("c5m4_quarter", "https://static.wikia.nocookie.net/left4dead/images/e/e8/TheNewParish.jpg"),
+            new Resources.Map("c5m5_bridge", "https://static.wikia.nocookie.net/left4dead/images/e/e8/TheNewParish.jpg"),
+            // The Passing
+            new Resources.Map("c6m1_riverbank", "https://static.wikia.nocookie.net/left4dead/images/f/f3/The_Passing_Poster.jpg"),
+            new Resources.Map("c6m2_bedlam", "https://static.wikia.nocookie.net/left4dead/images/f/f3/The_Passing_Poster.jpg"),
+            new Resources.Map("c6m3_port", "https://static.wikia.nocookie.net/left4dead/images/f/f3/The_Passing_Poster.jpg"),
+            // The Sacrifice
+            new Resources.Map("c7m1_docks", "https://static.wikia.nocookie.net/left4dead/images/f/ff/It%27s_Your_Funeral.jpg"),
+            new Resources.Map("c7m2_barge", "https://static.wikia.nocookie.net/left4dead/images/f/ff/It%27s_Your_Funeral.jpg"),
+            new Resources.Map("c7m3_port", "https://static.wikia.nocookie.net/left4dead/images/f/ff/It%27s_Your_Funeral.jpg"),
+            // No Mercy (L4D1 campaign ported to L4D2)
+            new Resources.Map("c8m1_apartment", "https://static.wikia.nocookie.net/left4dead/images/d/d2/No_Mercy.jpg"),
+            new Resources.Map("c8m2_subway", "https://static.wikia.nocookie.net/left4dead/images/d/d2/No_Mercy.jpg"),
+            new Resources.Map("c8m3_sewers", "https://static.wikia.nocookie.net/left4dead/images/d/d2/No_Mercy.jpg"),
+            new Resources.Map("c8m4_interior", "https://static.wikia.nocookie.net/left4dead/images/d/d2/No_Mercy.jpg"),
+            new Resources.Map("c8m5_rooftop", "https://static.wikia.nocookie.net/left4dead/images/d/d2/No_Mercy.jpg"),
+            // Crash Course (L4D1)
+            new Resources.Map("c9m1_alleys", "https://static.wikia.nocookie.net/left4dead/images/8/89/Crash_Course.jpg"),
+            new Resources.Map("c9m2_lots", "https://static.wikia.nocookie.net/left4dead/images/8/89/Crash_Course.jpg"),
+            // Death Toll (L4D1)
+            new Resources.Map("c10m1_caves", "https://static.wikia.nocookie.net/left4dead/images/9/93/Death_Toll.jpg"),
+            new Resources.Map("c10m2_drainage", "https://static.wikia.nocookie.net/left4dead/images/9/93/Death_Toll.jpg"),
+            new Resources.Map("c10m3_ranchhouse", "https://static.wikia.nocookie.net/left4dead/images/9/93/Death_Toll.jpg"),
+            new Resources.Map("c10m4_mainstreet", "https://static.wikia.nocookie.net/left4dead/images/9/93/Death_Toll.jpg"),
+            new Resources.Map("c10m5_houseboat", "https://static.wikia.nocookie.net/left4dead/images/9/93/Death_Toll.jpg"),
+            // Dead Air (L4D1)
+            new Resources.Map("c11m1_greenhouse", "https://static.wikia.nocookie.net/left4dead/images/8/8c/Dead_Air.jpg"),
+            new Resources.Map("c11m2_offices", "https://static.wikia.nocookie.net/left4dead/images/8/8c/Dead_Air.jpg"),
+            new Resources.Map("c11m3_garage", "https://static.wikia.nocookie.net/left4dead/images/8/8c/Dead_Air.jpg"),
+            new Resources.Map("c11m4_terminal", "https://static.wikia.nocookie.net/left4dead/images/8/8c/Dead_Air.jpg"),
+            new Resources.Map("c11m5_runway", "https://static.wikia.nocookie.net/left4dead/images/8/8c/Dead_Air.jpg"),
+            // Blood Harvest (L4D1)
+            new Resources.Map("c12m1_hilltop", "https://static.wikia.nocookie.net/left4dead/images/0/03/Blood_Harvest.jpg"),
+            new Resources.Map("c12m2_traintunnel", "https://static.wikia.nocookie.net/left4dead/images/0/03/Blood_Harvest.jpg"),
+            new Resources.Map("c12m3_bridge", "https://static.wikia.nocookie.net/left4dead/images/0/03/Blood_Harvest.jpg"),
+            new Resources.Map("c12m4_barn", "https://static.wikia.nocookie.net/left4dead/images/0/03/Blood_Harvest.jpg"),
+            new Resources.Map("c12m5_cornfield", "https://static.wikia.nocookie.net/left4dead/images/0/03/Blood_Harvest.jpg"),
+            // Cold Stream (Community campaign)
+            new Resources.Map("c13m1_alpinecreek", "https://static.wikia.nocookie.net/left4dead/images/2/2c/COLDSTEAMPOSTER.png"),
+            new Resources.Map("c13m2_southpinestream", "https://static.wikia.nocookie.net/left4dead/images/2/2c/COLDSTEAMPOSTER.png"),
+            new Resources.Map("c13m3_memorialbridge", "https://static.wikia.nocookie.net/left4dead/images/2/2c/COLDSTEAMPOSTER.png"),
+            new Resources.Map("c13m4_cutthroatcreek", "https://static.wikia.nocookie.net/left4dead/images/2/2c/COLDSTEAMPOSTER.png"),
+            // The Last Stand (Community update)
+            new Resources.Map("c14m1_junkyard", "https://static.wikia.nocookie.net/left4dead/images/9/9e/The_Last_Stand.jpg"),
+            new Resources.Map("c14m2_lighthouse", "https://static.wikia.nocookie.net/left4dead/images/9/9e/The_Last_Stand.jpg")
         ]
         // @formatter:on
     };
