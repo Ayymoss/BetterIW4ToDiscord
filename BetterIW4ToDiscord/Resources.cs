@@ -15,8 +15,13 @@ public class Resources(ConfigurationRoot configuration)
 
     public Map GetMap(IGameServer server)
     {
-        var maps = configuration.GameImageMap.GetValueOrDefault(server.GameCode.ToString());
-        return maps?.FirstOrDefault(x => x.Name.Equals(server.Map.Name)) ?? new Map("Unknown Map",
+        var gameCode = server.RconParser.Name.Equals("7 Days to Die Parser", StringComparison.Ordinal)
+            ? "D7D"
+            : server.GameCode.ToString();
+        var maps = configuration.GameImageMap.GetValueOrDefault(gameCode);
+        return maps?.FirstOrDefault(x => x.Name.Equals(server.Map.Name, StringComparison.OrdinalIgnoreCase))
+               ?? maps?.FirstOrDefault(x => x.Name == "*")
+               ?? new Map("Unknown Map",
             "https://cdn0.iconfinder.com/data/icons/flat-design-basic-set-1/24/error-exclamation-512.png");
     }
 }
