@@ -17,6 +17,7 @@ public class ConfigurationRoot
         ["Plutonium T4 CO-OP/Zombies Parser"] = new Resources.Parser("PlutoT4 Singleplayer","https://i.gyazo.com/1e1987d84038aae38610cab9c999868d.png", 7829308),
         ["RektT5m Parser"] = new Resources.Parser("RektT5M","https://i.gyazo.com/a8a22764fafd4cc178329717b9bb35dd.png", 6064778),
         ["Plutonium T5 Parser (2025)"] = new Resources.Parser("PlutoT5","https://i.gyazo.com/a8a22764fafd4cc178329717b9bb35dd.png", 6064778),
+        ["7 Days to Die Parser"] = new Resources.Parser("7 Days to Die","https://www.orgpack.com/templates/orgpack/html/img/games/icons/7d2d_icon.png", 11337728),
         ["Plutonium T6 Parser (2024)"] = new Resources.Parser("PlutoT6","https://i.gyazo.com/5a445c5c733c698b32732550ec797e91.png", 15108608),
         ["Black Ops 3 Parser"] = new Resources.Parser("Call of Duty: Black Ops III","https://i.gyazo.com/5691ca84d47e219cdec76901ff142159.png", 16737792),
         ["BOIII Parser"] = new Resources.Parser("BOIII","https://i.imgur.com/nIi5QFP.jpg", 16737792),
@@ -330,6 +331,10 @@ public class ConfigurationRoot
             new Resources.Map("zm_sumpf", "https://static.wikia.nocookie.net/callofduty/images/1/16/Shi_No_Numa_Menu_Selection_BO3.png/revision/latest/scale-to-width-down/1000?cb=20170617042257"),
             new Resources.Map("zm_factory", "https://static.wikia.nocookie.net/callofduty/images/4/4d/The_Giant_Menu_Selection_BO3.png/revision/latest/scale-to-width-down/1000?cb=20160923082219"),
             new Resources.Map("zm_asylum", "https://static.wikia.nocookie.net/callofduty/images/e/e4/Verruckt_Menu_Selection_BO3.png/revision/latest/scale-to-width-down/1000?cb=20170617042321"),
+        ],
+        ["D7D"] =
+        [
+            new Resources.Map("*", "https://wallpaperaccess.com/full/4126671.jpg"),
         ],
         ["SHG1"] =
         [
