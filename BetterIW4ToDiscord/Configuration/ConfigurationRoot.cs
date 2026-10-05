@@ -21,6 +21,7 @@ public class ConfigurationRoot
         ["Plutonium T6 Parser (2024)"] = new Resources.Parser("PlutoT6","https://i.gyazo.com/5a445c5c733c698b32732550ec797e91.png", 15108608),
         ["Black Ops 3 Parser"] = new Resources.Parser("Call of Duty: Black Ops III","https://i.gyazo.com/5691ca84d47e219cdec76901ff142159.png", 16737792),
         ["BOIII Parser"] = new Resources.Parser("BOIII","https://i.imgur.com/nIi5QFP.jpg", 16737792),
+        ["EzzBOIII Parser"] = new Resources.Parser("BOIII","https://i.imgur.com/nIi5QFP.jpg", 16737792),
         ["S1x Parser"] = new Resources.Parser("SHG1","https://i.gyazo.com/d524bf93e1fc38fa46f8fe1ed5162493.png", 13421568),
         ["CS:GO Parser"] = new Resources.Parser("CSGO","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
         ["CS:GO (SourceMod) Parser"] = new Resources.Parser("CSGO (SourceMod)","https://www.freeiconspng.com/uploads/csgo-icon-4.png", 1911881),
